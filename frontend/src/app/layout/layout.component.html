@@ -1,0 +1,17 @@
+<td-layout class="layout-management-list-demo" sidenavWidth="280px">
+    <td-layout-nav logo="assets:teradata" toolbarTitle="BingeBo" navigationRoute="/">
+      <td-layout-manage-list [opened]="true" mode="side">
+        <mat-toolbar td-sidenav-content>Episodes</mat-toolbar>
+        <div td-sidenav-content>
+          <mat-action-list>
+            <button mat-list-item *ngFor="let episode of episodes" class="list" (click)="selectEpisode(episode.path,episode.name)"> {{episode.name}} </button>
+          </mat-action-list>
+        </div>
+        <mat-toolbar>
+          <button mat-button [tdLayoutManageListToggle]="true">close</button>
+          {{currVideoName}}
+        </mat-toolbar>
+        <app-player [video]="currEpisode"></app-player>
+      </td-layout-manage-list>
+    </td-layout-nav>
+   </td-layout>

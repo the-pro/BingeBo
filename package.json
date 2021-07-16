@@ -1,0 +1,29 @@
+{
+  "name": "stream-hack-server",
+  "version": "1.0.0",
+  "description": "Server for the stream hack app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "concurrently --kill-others \"node index.js\" \"cd frontend && ng serve\"",
+    "serve:dev": "concurrently --kill-others \"nodemon index.js\" \"cd frontend && ng serve\"",
+    "postinstall": "cd frontend && npm install && ngcc"
+  },
+  "keywords": [
+    "Anime",
+    "Series",
+    "Binge-Watch",
+    "Stream",
+    "tv"
+  ],
+  "author": "Ayas Behera",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "file-type": "^16.5.0",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7"
+  }
+}

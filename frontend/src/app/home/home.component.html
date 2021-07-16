@@ -1,0 +1,10 @@
+<td-layout class="layout-nav-demo" sidenavWidth="280px">
+    <td-layout-nav logo="assets:teradata" toolbarTitle="BingeBo" navigationRoute="/">
+      <br>
+      <div id="content">
+      </div>
+      <mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-tile *ngFor = "let curr of names" (click)="navigate(curr)"><app-video-component  [series]="curr"></app-video-component></mat-grid-tile>
+      </mat-grid-list>
+    </td-layout-nav>
+   </td-layout>
