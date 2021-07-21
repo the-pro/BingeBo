@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "concurrently --kill-others \"node index.js\" \"cd frontend && ng serve\"",
-    "serve:dev": "concurrently --kill-others \"nodemon index.js\" \"cd frontend && ng serve\"",
+    "lint": "eslint *.[jt]s  --fix && cd frontend && ng lint --fix && npx stylelint \"**/*.scss\" --fix && cd ..",
+    "serve": "concurrently --kill-others \"node server.js\" \"cd frontend && ng serve\"",
+    "serve:dev": "concurrently --kill-others \"nodemon server.js\" \"cd frontend && ng serve\"",
     "postinstall": "cd frontend && npm install && ngcc"
   },
   "keywords": [
@@ -24,6 +25,12 @@
     "express": "^4.17.1",
     "file-type": "^16.5.0",
     "nodemon": "^2.0.7",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0"
   }
 }
