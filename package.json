@@ -4,7 +4,7 @@
   "description": "Server for the stream hack app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cd frontend && ng test --watch=false --source-map=true && cd ..",
     "lint": "eslint *.[jt]s  --fix && cd frontend && ng lint --fix && npx stylelint \"**/*.scss\" --fix && cd ..",
     "serve": "concurrently --kill-others \"node server.js\" \"cd frontend && ng serve\"",
     "serve:dev": "concurrently --kill-others \"nodemon server.js\" \"cd frontend && ng serve\"",
