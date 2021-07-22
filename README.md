@@ -10,7 +10,7 @@
 
 An Application that lets you stream local video files in your computer
 
-# Installation
+### Installation
 
 Setup Angular cli:
 
@@ -31,3 +31,14 @@ To start the application run
 Thats it! You have got a working application
 
 Now move all your tv series into the frontend/src/assets/series folder and go to http://localhost:4200 to enjoy the series
+
+### Development
+
+To run the app in development run:
+`npm run serve:dev`
+
+#### Testing
+
+There are two currently two types of tests:
+For Frontend: `npm run test`
+For Backend(APIs): `npm run frisby`
