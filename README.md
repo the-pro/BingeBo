@@ -1,4 +1,13 @@
+<!-- ![favicon](https://user-images.githubusercontent.com/42973786/126619336-982305d2-10d4-4913-9df7-2619e0268a1e.jpg) -->
+
 # BingeBo
+[![GitHub stars](https://img.shields.io/github/stars/the-pro/BingeBo)](https://github.com/the-pro/BingeBo/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/the-pro/BingeBo)](https://github.com/the-pro/BingeBo/issues)
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fthe-pro%2FBingeBo)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fthe-pro%2FBingeBo)
+[![Binge](https://img.shields.io/badge/binge-series-green)]()
+
+<img src="https://user-images.githubusercontent.com/42973786/126619336-982305d2-10d4-4913-9df7-2619e0268a1e.jpg" width="20%"></img>
+
 An Application that lets you stream local video files in your computer
 
 # Installation
