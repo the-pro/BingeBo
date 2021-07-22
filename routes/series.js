@@ -8,6 +8,15 @@ exports.getSeries = () => (req,res) => {
         let series = []
         let names = []
         let files =  fs.readdirSync(pathToSeries)
+        if(files.length === 0){
+            res.status(200).json({
+                series: series,
+                names: names
+            })
+
+            return
+        }
+        
         for(const file of files){
             let currFile = path.resolve(pathToSeries,file)
             if(fs.lstatSync(currFile).isDirectory()){

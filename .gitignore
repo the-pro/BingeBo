@@ -2,3 +2,4 @@ node_modules
 series
 frontend/node_modules
 frontend/src/assets/series
+.nyc_output
