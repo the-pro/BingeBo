@@ -1,7 +1,8 @@
 const fileType = require('file-type')
 const path = require('path')
+const utils = require('../utils')
 const fs = require('fs')
-const pathToSeries =path.resolve( __dirname,'frontend/src/assets/series')
+const pathToSeries = utils.path
 
 exports.getEpisodes = () => async (req,res) => {
     try{

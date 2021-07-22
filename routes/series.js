@@ -1,7 +1,7 @@
 const fs = require('fs')
-const fileType = require('file-type')
+const utils = require('../utils')
 const path = require('path')
-const pathToSeries =path.resolve( __dirname,'frontend/src/assets/series')
+const pathToSeries = utils.path
 
 exports.getSeries = () => (req,res) => {
     try{
@@ -16,7 +16,7 @@ exports.getSeries = () => (req,res) => {
 
             return
         }
-        
+
         for(const file of files){
             let currFile = path.resolve(pathToSeries,file)
             if(fs.lstatSync(currFile).isDirectory()){
