@@ -10,6 +10,10 @@
 
 An Application that lets you stream local video files in your computer
 
+<!-- ![Screenshot (15)](https://user-images.githubusercontent.com/42973786/126624088-4bac03cb-4458-403a-a236-85c3871535e4.png) -->
+<img src="https://user-images.githubusercontent.com/42973786/126624088-4bac03cb-4458-403a-a236-85c3871535e4.png" width="50%"></img>
+
+
 ### Installation
 
 Setup Angular cli:
